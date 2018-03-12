@@ -18,9 +18,4 @@ exports.configure = [
 
 exports.after = (util, config) => {
   if (!config.production) util.target.remove('app.production.js')
-
-  util.target.remove('views/index.sgr')
-  util.target.remove('views/layout.sgr')
-  util.target.remove('assets/css/_global.sss')
-  util.target.remove('assets/css/index.sss')
 }
