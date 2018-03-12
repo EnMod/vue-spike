@@ -1,0 +1,43 @@
+{
+  "name": "<%= S(name).slugify().value() %>",
+  "description": "<%= description %>",
+  "version": "0.0.1",
+  "author": "<%= github_username %>",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/<%= github_username %>/<%= S(name).slugify().value() %>/issues",
+  "dependencies": {
+    "reshape-standard": "^3.0.0",
+    "spike-css-standards": "^3.0.0",
+    "spike-js-standards": "^2.0.2",
+    "spike-optimize": "^0.1.2",
+    "spike-page-id": "^1.0.0",
+    "spike": "^2.0.0",
+    "sugarml": "^0.6.0",
+    "sugarss": "^1.0.0",
+    "vue": "^2.5.15",
+    "vue-loader": "^14.2.1",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^11.0.0"
+  },
+  "homepage": "https://github.com/<%= github_username %>/<%= S(name).slugify().value() %>",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/<%= github_username %>/<%= S(name).slugify().value() %>",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava",
+    "start": "spike watch",
+    "build": "spike compile",
+    "prod": "NODE_ENV=production spike compile -e production"
+  }
+}

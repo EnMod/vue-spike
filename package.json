@@ -1,0 +1,34 @@
+{
+  "name": "vue-spike",
+  "description": "Base template for Vue work in Spike",
+  "version": "0.0.1",
+  "author": "Carrot Creative",
+  "ava": {
+    "verbose": "true",
+    "serial": "true",
+    "files": "test/test.js"
+  },
+  "bugs": "https://github.com/enmod/vue-spike/issues",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "os-tmpdir": "^1.0.1",
+    "rmfr": "^2.0.0",
+    "spike-core": "^2.0.0",
+    "sprout": "^1.2.1",
+    "when": "^3.7.7"
+  },
+  "homepage": "https://github.com/enmod/vue-spike",
+  "keywords": [
+    "spike",
+    "spike-template",
+    "sprout",
+    "sprout-template",
+    "enmod"
+  ],
+  "license": "MIT",
+  "main": "init.js",
+  "repository": "enmod/vue-spike",
+  "scripts": {
+    "test": "ava"
+  }
+}
