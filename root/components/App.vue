@@ -1,9 +1,13 @@
 <template lang="pug">
-  p(@click="sampleMethod" :href="lonk") {{ sample }}
+  {{ sample }}
 </template>
 <script>
 export default {
-  name: "app",
+  name() {
+    return {
+      name: "app"
+    };
+  },
   data() {
     return {
       title: "Vue Template",
